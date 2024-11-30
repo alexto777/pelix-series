@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-mode:#fff;
+    --dark-mode: #151515;
+    --text-light: #000;
+    --text-dark: #fff;
+
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--light-mode);
+    color: var(--text-light);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: darkcyan;
+    color: white;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkcyan;
+    color: #fff;
+    border: white 2px solid;
+}
+
+.movies {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    border: #ddd 2px solid;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 5px;
+    transition: transform 0.4s;
+}
+
+.card:hover {
+    transform: scale(1);
+}
+
+.dark-mode {
+    background-color: var(--dark-mode);
+    color: var(--text-dark);
+}
+
+.light-mode {
+    background-color: var(--light-mode);
+    color: var(--text-light);
+}
+
+.dark-mode .card {
+    background-color: #333;
+    color: var(--text-dark);
+}
+
+/* Estilos de Agregando clases */
+
+.listas {
+    color: darkblue;
+}
+
+.italicas {
+    font-style: italic;
+}
+
+.titulo {
+    color: darkviolet;
+}
